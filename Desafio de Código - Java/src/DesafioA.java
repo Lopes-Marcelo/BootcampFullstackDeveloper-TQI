@@ -10,17 +10,12 @@ public class DesafioA{
         Scanner scan = new Scanner(System.in);
         
         int N = scan.nextInt();
-        String string = scan.nextLine();
-
-        //quebra string em várias substrings a partir de um caracter
-
-        String[] s = string.split(" ");
 
         int[] idade = new int[N];
 
         for (int i = 0; i < N; i++)
         {
-             idade[i] = Integer.parseInt(s[i+1]);
+            idade[i] = scan.nextInt();
         }
 
         System.out.println("Nao poderao entrar as idades: ");
