@@ -1,4 +1,4 @@
-/*import java.io.IOException;
+import java.io.IOException;
 import java.util.*;
  
 
@@ -14,14 +14,16 @@ public class DesafioB{
         while(input.hasNext()){
             int entrada = input.nextInt();
 
-            if (           ) {
-            System.out.println();
+            if (entrada % 2 == 0) {
+            System.out.println("0");
         } else {
-            System.out.println();
+            System.out.println("1");
             }
         }
+
+        input.close();
     }
-}*/
+}
 
 /*Em uma lanchonete, Ale e Juliana estão brigando por quem vai pagar a conta. Para dar um fim à discussão, a garçonete propõe um desafio e, quem tivesse mais acertos, não pagaria a conta. Ela lançou o seguinte desafio: dado a seguinte somatória abaixo, informe o resultado, com uma quantidade de termos no mesmo:
 
