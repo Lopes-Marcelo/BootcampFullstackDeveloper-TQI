@@ -1,43 +1,41 @@
-// TODO: complete os espaços em branco com sua solução para o problema
-// Abaixo segue um exemplo de código que você pode ou não utilizar
-/*import java.util.*;
+import java.util.*;
 
 public class DesafioD{
 	 
     public static void main(String[] args) {
 
-		//a classe Scanner auxilia na leitura dos dados de entrada
 		Scanner leitor = new Scanner(System.in);
 
 		int QT = Integer.parseInt(leitor.nextLine());
-
-		String linha1[], linha2[], nome1, escolha1, nome2, escolha2;
-		int N, M;
+   
+		String linha1[], linha2[], nome1, escolha1, nome2;		int N, M, resposta;
 		
-		for (int i = 0; i < QT; i++) {
+		for (int i = 0; i < QT; i++){
 
-			//quebra string em várias substrings a partir de um caracter
 			linha1 = leitor.nextLine().split(" ");
 			linha2 = leitor.nextLine().split(" ");
-			
 
 			N = Integer.parseInt(linha2[0]);
-			M = Integer.parseInt(         );
-		
+			M = Integer.parseInt(linha2[1]);
+			
+			resposta = (N + M) % 2;
+
 			nome1 = linha1[0];
 			escolha1 = linha1[1];
-
-			nome2 = linha1[ ];
-			escolha2 = linha1[ ];
+      
+			nome2 = linha1[2];
+			escolha2 = linha1[3];
 			
-			 
-			if (((N + M) %       && escolha1.equalsIgnoreCase("PAR")) ||
-			    ((N + M) %       &&                                 )) System.out.println(    );
-			else System.out.println(nome2);
+			if (resposta == 0  && escolha1.equalsIgnoreCase("PAR") || resposta > 0 && escolha1.equalsIgnoreCase("IMPAR")){
+			    System.out.println(nome1);
+			} else (resposta == 0  && escolha2.equalsIgnoreCase("PAR") || resposta > 0 && escolha2.equalsIgnoreCase("IMPAR")){
+				System.out.println(nome2);
+			} 
 		}
+
+		leitor.close();
     }
-	
-}*/
+}
 
 /*O jogo PAR ou ÍMPAR vem decidindo o destino de pessoas ao longo de décadas. As regras são simples: dois jogadores informam um número e se a soma desses números for par o jogador que escolheu PAR ganha e vice-versa. Em um jogo que as crianças do bairro estão jogando, eles não conseguem decidir quem será o próximo a escolher as regras da brincadeira. Para solucionar esse problema, você foi chamado.
 
