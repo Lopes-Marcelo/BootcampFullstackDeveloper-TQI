@@ -1,17 +1,15 @@
-/*import java.io.IOException;
+import java.io.IOException;
 import java.util.Scanner;
 
-public class DesafioE {
-
-    //complete o código para que ele funcione corretamente
+public class DesafioE{
 
     public static void main(String[] args) throws IOException {
-	//a classe Scanner auxilia na leitura dos dados de entrada
-    	Scanner leitor = new Scanner(System.in);
+	
+    	Scanner teclado = new Scanner(System.in);
 
     	while (true) {
-        	int N = leitor.nextInt();
-        	int M = 
+        	int N = teclado.nextInt();
+        	int M = teclado.nextInt();
         	int troco = M - N;
         	int[] notas = {2, 5, 10, 20, 50, 100};
         	boolean possivel = false;
@@ -20,16 +18,20 @@ public class DesafioE {
         	
     		for (int i = 0; i < 6; i++) {
     			for (int j = 0; j < 6; j++) {
-    				if (                )              ;
+    			  int somaNotas = notas[i] + notas[j];
+    				if(troco == somaNotas){
+    				  possivel = true;
+    				}
     			}
     		}
     		
-    		if (        ) System.out.println("possible");
-    		else                 ("impossible");
+    		if (possivel) System.out.println("possible");
+    		else  System.out.println("impossible");
     	}
+
+		teclado.close();
     }
-	
-}*/
+}
 
 /*Gilberto é um famoso vendedor de esfirras na região. Porém, apesar de todos gostarem de suas esfirras, ele só sabe dar o troco com duas notas, ou seja, nem sempre é possível receber o troco certo. Para facilitar a vida de Gil, escreva um programa para ele que determine se é possível ou não devolver o troco exato utilizando duas notas.
 
