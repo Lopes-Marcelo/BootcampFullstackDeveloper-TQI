@@ -9,7 +9,7 @@ for(let i = 0; i < qtdEntradas; i++){
     if (input < superior) superior = input;
 }
 
-print(superior);
+print(superior);    
 
 /*Desafio - Papaleguas é um corredor exemplar, sua especialidade é a prova dos 100 metros rasos. Diariamente, ele treina para realizar as provas no menor tempo possível e se tornar recordista mundial na categoria. Pode se perceber que, dependendo da quantidade de tentativas, o seu desempenho melhora ou piora. Diante disso, ele te desafia para calcular a tentativa mais rápida de cada treino diário.
 
