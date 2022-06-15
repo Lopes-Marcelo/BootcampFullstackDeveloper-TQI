@@ -1,25 +1,17 @@
-// IMPORTANTE: As funções "gets" e "print" são acessíveis globalmente e têm as seguintes funcionalidades: 
-// - "gets" : lê UMA linha com dados de entrada (inputs) do usuário;
-// - "print": imprime um texto de saída (output) e pula uma linha ("\n") automaticamente;
-// Abaixo segue o template de código para este desafio, o qual pode ou não utilizar tais funções
-
-
-let lines = gets().split("\n");
+let linhas = gets().split("\n");
  
-var numberOfMatches = parseInt(lines.shift);
+var numeroPartidas = parseInt(linhas.shift);
  
-let n = parseInt(lines.shift());
-let totalMatches = 0;
-    while(n>1){
-        if(              ){
-             
-            
-        }else{
-            
-        }
-    }
-
-//Escreva o seu código nos espaços em branco
+let n = parseInt(linhas.shift());
+let totalPartidas = 1;
+    
+while((n - 1) >1){
+    
+    n--;
+    totalPartidas++;
+}
+    
+console.log(totalPartidas);
 
 /*Desafio - Você recebe um inteiro n, o número de equipes em um torneio que tem regras estranhas:
 
