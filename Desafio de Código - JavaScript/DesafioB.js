@@ -1,9 +1,7 @@
 const A = parseInt(gets());
 const B = parseInt(gets());
-
-let total = ((((B - A) + 1) * ( A - 1)) + ((((B - A) + 1) / 2) * ((B - A) + 1))) + (((B - A ) + 1)/2);
-
-console.log(total);
+const soma = (A + B) * (B - A + 1)/2;
+print(soma);
 
 /*Desafio - Um número natural é um inteiro não-negativo (0, 1, 2, 3, 4, 5,...). A sua tarefa neste problema é calcular a soma dos números naturais que estão presentes em um determinado intervalo [A, B] inclusive.
 
