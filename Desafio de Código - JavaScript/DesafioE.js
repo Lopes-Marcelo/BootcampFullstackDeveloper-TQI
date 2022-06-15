@@ -6,7 +6,6 @@ let n = parseInt(linhas.shift());
 let totalPartidas = 1;
     
 while((n - 1) >1){
-    
     n--;
     totalPartidas++;
 }
