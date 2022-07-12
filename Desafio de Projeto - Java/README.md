@@ -1,8 +1,8 @@
 # Desafio de Projeto Java - Criando um Banco Digital com Java e Orientação a Objeto
 
-Tendo em vista um conhecimento prévio de como funciona um sistema bancário, o projeto tem o objetivo construir uma solução orientada a objetos em Java seguindo o seguinte cenário: 
+Tendo em vista um conhecimento prévio de como funciona um sistema bancário, o projeto tem o objetivo de construir uma solução orientada a objetos em Java seguindo o seguinte cenário: 
 
-Um banco oferece aos seus clientes dois tipos diferentes de conta (Corrente e Poupança), as quais possuem as funcionalidades de depósito, saque e transferência (entre contas da mesma instituição).
+Um banco oferece aos seus clientes dois tipos diferentes de conta (Corrente e Poupança), as quais possuem as funcionalidades de depósito, saque e transferência entre contas da mesma instituição.
 
 ## Abstração
 
