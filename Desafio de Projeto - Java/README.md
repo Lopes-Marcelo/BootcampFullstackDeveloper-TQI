@@ -6,15 +6,15 @@ Um banco oferece aos seus clientes dois tipos diferentes de conta (Corrente e Po
 
 ## Abstração
 
-Habilidade de concentrar-se nos aspectos essenciais de um domínio, ignorando características menos importantes, acidentais ou não essenciais. 
+Habilidade de concentrar-se nos aspectos essenciais de um domínio, ignorando características menos importantes, acidentais ou não essenciais. Nesse contexto, objetos são abstrações de entidades existentes no domínio em questão.
 
 ## Encapsulamento
 
-fjnsdlkfsdf
+Encapsular significa esconder a implementação dos objetos, criando assim interfaces de uso mais concisas e fáceis de usar/entender. O encapsulamento favorece principalmente dois aspectos de um sistema: a manutenção e a evolução.
 
 ## Herança
 
-gosgsdjngjsgnsdjçgn
+Permite que se difina uma classe filha que reutiliza (herda), estende ou modifica o comportamento de uma classe mãe. A classe cujos membros são herdados é chamada de classe base. A classe que herda os membros da classe base é chamada classe derivada.
 
 ## Polimorfismo
 
