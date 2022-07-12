@@ -1,13 +1,15 @@
-public class ContaCorrente extends Conta implements IConta{
+public final class ContaCorrente extends Conta implements IConta{
 
     //Método Construtor
 
-    public ContaCorrente(int numConta, String tipo, String dono, boolean status){
-        super(numConta, tipo, dono, status);
+    private static int SEQUENCIAL = 1;
+
+    public ContaCorrente(String dono, boolean status){
+        super(dono, status);
         this.tipo = "CC";
         this.status = true;
         this.saldo = getSaldo() + 50; //Conta Corrente aberta no banco recebe um valor de R$50,00
-
+        super.numConta = SEQUENCIAL ++;
     }
 
     //Métodos Especiais saldo status tipo
@@ -33,7 +35,7 @@ public class ContaCorrente extends Conta implements IConta{
 
     @Override
     public String toString(){
-        return "Conta corrente aberta com sucesso! Aproveite os R$50,00 de bônus!" + "\nCliente: " + getDono() + "\nConta: " + getNumConta() + "\nTipo: " + getTipo() + "\nSaldo: " + getSaldo() + "\nStatus: " + getStatus();
+        return "Conta corrente aberta com sucesso! Aproveite os R$50,00 de bônus!" + "\nCliente: " + getDono() + "\nConta: " + getNumConta() + "\nAgência: 0001 " + "\nTipo: " + getTipo() + "\nSaldo: " + getSaldo() + "\nStatus: " + getStatus();
     }
 
     //Métodos Públicos da Interface
@@ -69,6 +71,7 @@ public class ContaCorrente extends Conta implements IConta{
             System.out.println("Procedimento de troca de tipo de conta iniciado");
             System.out.println("-----------------------------------------------");
             System.out.println("Conta: " + this.getNumConta());
+            System.out.println("Agência: 0001");
             System.out.println("Dono: " + this.getDono());
             System.out.println("Tipo: " + this.getTipo());
             System.out.println("Saldo: R$" + this.getSaldo());
@@ -80,6 +83,7 @@ public class ContaCorrente extends Conta implements IConta{
 
             System.out.println("-----------------------------------------------");
             System.out.println("Conta: " + this.getNumConta());
+            System.out.println("Agência: 0001");
             System.out.println("Dono: " + this.getDono());
             System.out.println("Tipo: " + this.getTipo());
             System.out.println("Saldo: R$" + this.getSaldo());
@@ -95,6 +99,7 @@ public class ContaCorrente extends Conta implements IConta{
         if (this.getStatus() == true){
             System.out.println("-----------------------------");
             System.out.println("Conta: " + this.getNumConta());
+            System.out.println("Agência: 0001");
             System.out.println("Dono: " + this.getDono());
             System.out.println("Tipo: " + this.getTipo());
             System.out.println("Saldo: R$" + this.getSaldo());
@@ -133,5 +138,15 @@ public class ContaCorrente extends Conta implements IConta{
             this.setStatus(false);
             System.out.println("Conta corrente fechada com sucesso.");
         }
+    }
+
+    public void transferirCC(float valor, ContaCorrente contaDestino){
+        this.sacar(valor);
+        contaDestino.depositar(valor);
+    }
+
+    public void transferirCP(float valor, ContaPoupanca contaDestino){
+        this.sacar(valor);
+        contaDestino.depositar(valor);
     }
 }

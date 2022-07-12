@@ -18,4 +18,4 @@ Permite que se difina uma classe filha que reutiliza (herda), estende ou modific
 
 ## Polimorfismo
 
-jfnkjsdfjngskd
+Capacidade de um objeto poder ser referenciado de várias formas, ou seja, é a capacidade de tratar objetos criados a partir das classes especifícas como objetos de uma classe genérica.

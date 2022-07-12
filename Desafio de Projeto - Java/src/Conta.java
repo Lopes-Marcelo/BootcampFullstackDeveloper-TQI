@@ -10,10 +10,8 @@ public abstract class Conta {
 
     //Método Contrutor
 
-    public Conta(int numConta, String tipo, String dono, boolean status){
+    public Conta(String dono, boolean status){
 
-        this.numConta = numConta;
-        this.tipo = tipo;
         this.dono = dono;
         this.status = false;
     }
@@ -40,7 +38,7 @@ public abstract class Conta {
         return this.status;
     }
 
-    //Métodos Abstratos
+    //Método Abstrato
     
     @Override
     public String toString(){
