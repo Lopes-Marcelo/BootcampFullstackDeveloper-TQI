@@ -4,8 +4,8 @@ Tendo em vista um conhecimento prévio de como a liguagem de marcação para a c
 
 ## HTML
 
-jnadkjgndkjgn
+A Linguagem de Marcação de Hipertexto (HTML) é a linguagem principal da web. Conhecida em inglês como Hypertext Markup Language, ela permite que os desenvolvedores desenhem como serão exibidos pelo navegador os elementos da página, como texto, hiperlinks e arquivos multimídia.
 
 ## CSS
 
-jfndkjgnsdkgj
+Ao falarmos sobre o que é CSS (Cascading Style Sheet, ou Folha de Estilo em Cascatas), é necessário dizer que sua aplicação é utilizada na estilização de componentes escritos em linguagens de marcação.
