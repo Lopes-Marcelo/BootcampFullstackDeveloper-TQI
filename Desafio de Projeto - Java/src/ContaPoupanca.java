@@ -17,28 +17,13 @@ public final class ContaPoupanca extends Conta implements IConta{
     private void setSaldo(float n){
         this.saldo = n;
     }
-    
-    @Override
-    public float getSaldo() {
-        return super.getSaldo();
-    }
 
     private void setTipo(String t){
         this.tipo = t;
     }
 
-    @Override
-    public String getTipo() {
-        return super.getTipo();
-    }
-
     private void setStatus(boolean s){
         this.status = s;
-    }
-    
-    @Override
-    public boolean getStatus() {
-        return super.getStatus();
     }
 
     //Métodos Abstratos
@@ -46,6 +31,21 @@ public final class ContaPoupanca extends Conta implements IConta{
     @Override
     public String toString(){
         return "Conta poupança aberta com sucesso! Aproveite os R$100,00 de bônus!" + "\nCliente: " + getDono() + "\nConta: " + getNumConta() + "\nAgência: 0001 " + "\nTipo: " + getTipo() + "\nSaldo: " + getSaldo() + "\nStatus: " + getStatus();
+    }
+
+    @Override
+    public float getSaldo() {
+        return super.getSaldo();
+    }
+
+    @Override
+    public String getTipo() {
+        return super.getTipo();
+    }
+
+    @Override
+    public boolean getStatus() {
+        return super.getStatus();
     }
 
     //Métodos Públicos 

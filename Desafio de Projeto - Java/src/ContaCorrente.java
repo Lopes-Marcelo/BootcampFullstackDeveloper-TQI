@@ -22,11 +22,6 @@ public final class ContaCorrente extends Conta implements IConta{
         this.tipo = t;
     }
 
-    @Override
-    public String getTipo() {
-        return super.getTipo();
-    }
-
     private void setStatus(boolean s){
         this.status = s;
     }
@@ -36,6 +31,21 @@ public final class ContaCorrente extends Conta implements IConta{
     @Override
     public String toString(){
         return "Conta corrente aberta com sucesso! Aproveite os R$50,00 de bônus!" + "\nCliente: " + getDono() + "\nConta: " + getNumConta() + "\nAgência: 0001 " + "\nTipo: " + getTipo() + "\nSaldo: " + getSaldo() + "\nStatus: " + getStatus();
+    }
+
+    @Override
+    public float getSaldo() {
+        return super.getSaldo();
+    }
+
+    @Override
+    public String getTipo() {
+        return super.getTipo();
+    }
+
+    @Override
+    public boolean getStatus() {
+        return super.getStatus();
     }
 
     //Métodos Públicos da Interface
