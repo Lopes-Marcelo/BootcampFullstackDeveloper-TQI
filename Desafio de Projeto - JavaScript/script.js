@@ -3,7 +3,7 @@ let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
 
-
+//Função para virar a carta
 function flipCard() {
     if(lockBoard) return;
     if(this === firstCard) return;
@@ -20,7 +20,7 @@ function flipCard() {
     checkForMatch();
 }
 
-
+//Função que checa se as cartas são iguais ou não
 function checkForMatch() {
     if(firstCard.dataset.card === secondCard.dataset.card) {
         disableCards();
@@ -30,7 +30,7 @@ function checkForMatch() {
     unflipCards();
 }
 
-
+//Função que desabilita as cartas
 function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
@@ -38,7 +38,7 @@ function disableCards() {
     resetBoard();
 }
 
-
+//Funcão que desvira as cartas
 function unflipCards() {
     lockBoard = true;
 
@@ -50,13 +50,13 @@ function unflipCards() {
     }, 1500);
 }
 
-
+//Função que reseta o tabuleiro
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
 
-
+//Função que embaralha as cartas
 (function shuffle() {
     cards.forEach((card) => {
         let ramdomPosition = Math.floor(Math.random() * 12);
@@ -64,7 +64,7 @@ function resetBoard() {
     })
 })();
 
-
+//Adiciona evento de clique na carta
 cards.forEach((card) => {
     card.addEventListener('click', flipCard)
 });
